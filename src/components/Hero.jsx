@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa';
-// Palitan ang 'profile.jpg' ng actual filename ng image mo
-import profilePic from '../assets/profile.jpg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -79,7 +77,7 @@ const Hero = () => {
           >
             <div className="w-32 h-32 rounded-full bg-gradient-to-r from-dark-plum via-dusty-mauve to-soft-pink p-1 mx-auto">
               <img 
-                src={profilePic} 
+                src="/Profile.jpg" 
                 alt="Allyza Sunshine"
                 className="w-full h-full rounded-full object-cover"
               />
