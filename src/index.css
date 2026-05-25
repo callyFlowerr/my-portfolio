@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream-white overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-dark-plum via-dusty-mauve to-soft-pink bg-clip-text text-transparent;
+  }
+  
+  .glow-effect {
+    @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(174,106,151,0.5)];
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream-white;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dusty-mauve rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-plum;
+}
